@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
         <div className={`flex opacity-0 items-center gap-6 mt-4 ml-5  ${isSidebar && 'opacity-100'}`}>
         <Image className='rounded-full bg-white' src={"/dollar.png"} alt="dollar" height={30} width={30}/>
-            <h2 className='text-white text-xl font-bold'>Discussin Form</h2>
+            <h2 className='text-white text-xl font-bold '>Discussin Form</h2>
         </div>
         <div className={`flex opacity-0 flex-col  gap-3 mt-5 ml-20  ${isSidebar && 'opacity-100'}`}>
             <h5 className='text-[17px] text-white cursor-pointer font-semibold '>Sentiment</h5>
@@ -43,9 +43,9 @@ const Hero = () => {
         <div className={`discussionBlock bg-white py-4 rounded-md shadow-lg w-[100%] overflow-hidden`}>
           <div className='userDetails flex items-center gap-6'>
           <Image className={`rounded-md duration-150 ml-2 mt-2`} src={"/user-acc.jpg"} alt="downarrow" height={40} width={40}/>
-          <h3 className='max-md:text-sm'>Lorem Ipsum</h3>
-          <p className={`bg-blue-500 rounded-xl px-3 text-sm text-white max-md:text-sm `}>Sector 2</p>
-          <p className={`text-blue-500  ${isSidebar ? 'ml-[40%]' : 'ml-[50%]'} max-md:ml-[10%]`}>2 mins ago</p>
+          <h3 className='max-md:text-sm max-sm:text-[14px]'>Lorem Ipsum</h3>
+          <p className={`bg-blue-500 rounded-xl px-3 text-sm text-white max-md:text-sm max-sm:text-[10px] `}>Sector 2</p>
+          <p className={`text-blue-500  ${isSidebar ? 'ml-[40%]' : 'ml-[50%]'} max-md:ml-[10%] max-sm:text-[10px]`}>2 mins ago</p>
           </div>
           <p className='commentSection mx-14 w-[70%] text-wrap max-md:text-sm  '>asdasdasdasdasdasda sdasddddddddddddddddddd dddddddddd ddddddddddddd</p>
           <div className='shareLike flex items-center gap-14 ml-16 max-md:text-[10px] max-md:gap-5'>
