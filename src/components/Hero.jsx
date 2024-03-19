@@ -9,7 +9,7 @@ const Hero = () => {
     }
   return (
     <div className="w-full h-full flex max-md:flex-col">
-      <div className={`sidebar w-0 max-md:fixed z-50 bg-[#1e375f] max-md:w-0 h-[100vh] ${isSidebar && 'w-[35%] duration-150'} duration-150`} >
+      <div className={`sidebar w-0 max-md:fixed z-50 bg-[#1e375f] max-md:w-0 h-[100vh] ${isSidebar && 'w-[35%] duration-150 max-md:w-[70%] max-sm:w-[80%]'} duration-150`} >
         <div className={`mt-7 flex op opacity-0 justify-between px-5 items-center ${isSidebar && 'opacity-100'}`}>
             <Image className='rounded-full' src={"/user-acc.jpg"} alt="" height={40} width={40}/>
             <h2 className='font-bold text-2xl absolute ml-12 text-white'>Hello, User</h2>
@@ -35,8 +35,8 @@ const Hero = () => {
         </div>
       </div>
       <div className={`discussionSection w-[60%] max-md:w-[100%] bg-white h-[100vh] relative duration-150 px-4 ${isSidebar && 'w-[50%] duration-150'}`}>
-        <div className='sidebarArrow absolute top-[44%] left-0 bg-[#1e375f] w-4 h-20 cursor-pointer' onClick={sidebar}>
-        <Image className={`rounded-md rotate-90 duration-150 mt-6 ${isSidebar && '-rotate-90 duration-150'}`} src={"/downarrow.png"} alt="downarrow" height={40} width={40}/>
+        <div className={`sidebarArrow  fixed top-[44%]  left-0 bg-[#1e375f] w-4 h-20 cursor-pointer ${isSidebar && 'ml-[25.7%] max-md:ml-[70%] max-sm:ml-[80%] max-md:top-[44%] duration-200'} `} onClick={sidebar}>
+        <Image className={`rounded-md -rotate-90 duration-150 mt-6  ${isSidebar && 'rotate-90 duration-150'}`} src={"/downarrow.png"} alt="downarrow" height={40} width={40}/>
         </div>
         <h2 className='text-red-300 text-4xl font-bold bg-slate-300 w-[50%] max-md:w-[80%] p-2 items-center text-center ml-4 mt-4 shadow-lg'>Discussion Forum</h2>
         <div className='mt-3 discussionContainer flex flex-col gap-4'>
