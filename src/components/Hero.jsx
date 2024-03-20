@@ -72,7 +72,7 @@ const Hero = () => {
         
       </div>
       </div>
-      <div className={`marketStoriesSection w-[40%] max-md:w-[100%] max-md:w-[100%]h-[100vh] duration-150 scroll-mt-10 p-4 ${isSidebar && 'w-[25%] duration-150'} `} id="marketStories">
+      <div className={`marketStoriesSection w-[40%] max-md:w-[100%] h-[100vh] duration-150 scroll-mt-10 py-4  ${isSidebar && 'w-[25%] duration-150'} `} id="marketStories">
       <h2 className='text-red-300 text-2xl mb-10 font-bold bg-slate-300 mx-auto w-[50%] max-md:w-[50%] p-1 items-center text-center shadow-lg'>Market Stories</h2>
       <div className='flex flex-col gap-6'>
         <div className='storyCard w-[70%] h-[40%] bg-white mx-auto border-4 shadow-lg pb-3 overflow-hidden'>
