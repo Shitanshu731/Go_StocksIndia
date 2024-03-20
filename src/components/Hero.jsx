@@ -10,33 +10,35 @@ const Hero = () => {
     }
     
   return (
-    <div className="w-full h-full flex max-md:flex-col">
+    <div className="main w-full h-full flex max-md:flex-col" >
       <div className={`sidebar w-0 max-md:fixed z-[9999] bg-[#1e375f] max-md:w-0 h-[100vh] ${isSidebar && 'w-[35%] duration-150 max-md:w-[60%] max-sm:w-[50%]'} duration-150`} >
+      
         <div className={`mt-7 flex op opacity-0 justify-between px-5 items-center ${isSidebar && 'opacity-100'}`}>
             <Image className='rounded-full max-sm:w-4' src={"/user-acc.jpg"} alt="user" height={40} width={40}/>
             <h2 className='font-bold text-2xl absolute ml-12 max-sm:ml-5 text-white max-sm:text-[12px]'>Hello, User</h2>
             <Image className='rounded-full max-sm:w-4' src={"/notification.png"} alt="notification" height={40} width={40}/>
+            <Image className='rounded-full max-sm:w-4 hidden crossMenu rotate-90 cursor-pointer' src={"/downarrow.png"} alt="notification" height={30} width={30} onClick={sidebar}/>
         </div>
         <hr className='mt-3'/>
         <div className={`flex opacity-0 items-center gap-6 max-sm:gap-2 mt-4 ml-5 ${isSidebar && 'opacity-100'} hover:bg-black duration-150 rounded-lg p-3`}>
         <Image className='rounded-md max-sm:w-5' src={"/message.png"} alt="message" height={30} width={30}/>
-            <Link href="#discussionForm" className='text-white text-xl font-bold  max-sm:text-[10px]'>DiscussionForm</Link>
-            <Image className='rounded-md ml-20 cursor-pointer max-sm:ml-5 max-sm:w-3' src={"/downarrow.png"} alt="downarrow" height={20} width={20}/>
+            <Link href="#discussionForm" className='text-white text-xl font-bold  max-sm:text-[14px]'>DiscussionForm</Link>
+            <Image className='rounded-md ml-20 cursor-pointer max-sm:ml-1 max-sm:w-3' src={"/downarrow.png"} alt="downarrow" height={20} width={20}/>
         </div>
         <div className={`flex opacity-0 items-center gap-6 max-sm:gap-2 mt-4 ml-5  ${isSidebar && 'opacity-100'} hover:bg-black duration-150 rounded-lg p-3`}>
         <Image className='rounded-full max-sm:w-5 bg-white' src={"/dollar.png"} alt="dollar" height={30} width={30}/>
-            <Link href="#marketStories" className='text-white text-xl font-bold  max-sm:text-[10px] '>Market Stories</Link>
+            <Link href="#marketStories" className='text-white text-xl font-bold  max-sm:text-[14px] '>Market Stories</Link>
         </div>
         <div className={`flex opacity-0 flex-col  gap-3 mt-5 ml-20 max-sm:ml-10 max-sm:gap-7   ${isSidebar && 'opacity-100'} `}>
-            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[9px]  '>Sentiment</h5>
-            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[9px]  '>Market</h5>
-            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[9px]  '>Sector</h5>
-            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[9px]  '>Watchlist</h5>
-            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[9px]  '>Events</h5>
-            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[9px]  '>News/Interview</h5>
+            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[12px]  '>Sentiment</h5>
+            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[12px]  '>Market</h5>
+            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[12px]  '>Sector</h5>
+            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[12px]  '>Watchlist</h5>
+            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[12px]  '>Events</h5>
+            <h5 className='text-[17px] text-white cursor-pointer font-semibold max-sm:text-[12px]  '>News/Interview</h5>
         </div>
       </div>
-      <div className={`discussionSection w-[60%] max-md:w-[100%] bg-white h-[100vh] relative duration-150 px-4 mt-10 scroll-mt-32 ${isSidebar && 'w-[50%] duration-150'} `}  id="discussionForm">
+      <div className={`discussionSection w-[60%] max-md:w-[100%] h-[100vh] relative duration-150 px-4 max-md:mt-10 scroll-mt-32 ${isSidebar && 'w-[50%] duration-150'} `}  id="discussionForm" >
         <div className={`sidebarArrow  fixed top-[44%]  left-0 bg-[#1e375f] w-4 h-20 cursor-pointer ${isSidebar && 'ml-[25.7%] max-md:ml-[60%] max-sm:ml-[50%] max-md:top-[44%] duration-200'} `} onClick={sidebar}>
         <Image className={`rounded-md -rotate-90 duration-150 mt-6  ${isSidebar && 'rotate-90 duration-150'}`} src={"/downarrow.png"} alt="downarrow" height={40} width={40}/>
         </div>
@@ -74,7 +76,17 @@ const Hero = () => {
       </div>
       <div className={`marketStoriesSection w-[40%] max-md:w-[100%] h-[100vh] duration-150 scroll-mt-10 py-4  ${isSidebar && 'w-[25%] duration-150'} `} id="marketStories">
       <h2 className='text-red-300 text-2xl mb-10 font-bold bg-slate-300 mx-auto w-[50%] max-md:w-[50%] p-1 items-center text-center shadow-lg'>Market Stories</h2>
-      <div className='flex flex-col gap-6'>
+      <div className='allStories flex flex-col gap-6'>
+        <div className='storyCard w-[70%] h-[40%] bg-white mx-auto border-4 shadow-lg pb-3 overflow-hidden'>
+          <Image className={`cursor-pointer duration-150 w-[100%] h-[60%] `} src={"/s2.jpg"} alt="downarrow" height={100} width={100}/>
+          <h5 className='mt-4 font-bold ml-4'>The coldest Sunset</h5>
+          <p className='ml-4 w-[90%] mt-2'>This is a very great place to visit.This is a very great place to visit.This is a very great place to visit.</p>
+        </div>
+        <div className='storyCard w-[70%] h-[40%] bg-white mx-auto border-4 shadow-lg pb-3 overflow-hidden'>
+          <Image className={`cursor-pointer duration-150 w-[100%] h-[60%] `} src={"/s2.jpg"} alt="downarrow" height={100} width={100}/>
+          <h5 className='mt-4 font-bold ml-4'>The coldest Sunset</h5>
+          <p className='ml-4 w-[90%] mt-2'>This is a very great place to visit.This is a very great place to visit.This is a very great place to visit.</p>
+        </div>
         <div className='storyCard w-[70%] h-[40%] bg-white mx-auto border-4 shadow-lg pb-3 overflow-hidden'>
           <Image className={`cursor-pointer duration-150 w-[100%] h-[60%] `} src={"/s2.jpg"} alt="downarrow" height={100} width={100}/>
           <h5 className='mt-4 font-bold ml-4'>The coldest Sunset</h5>
