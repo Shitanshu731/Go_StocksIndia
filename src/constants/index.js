@@ -14,7 +14,7 @@ export const discussion = [
         userName : "Souraav Singh",
         type: "sector 4",
         time : "2 mins ago",
-        likes : "",
+        likes : "500 Likes",
         views : "4k",
         comments : "2k comments",
         post : "Hello this is sourav, This is a Great Website for me , its user interface is very clear. "
@@ -25,7 +25,7 @@ export const discussion = [
         userName : "Ankush Verma",
         type: "sector 2",
         time : "2 mins ago",
-        likes : "",
+        likes : "1k Likes",
         views : "5k",
         comments : "2k comments",
         post : "Hello this is ankush, This is a Great Website for me , its user interface is very clear. "
@@ -36,7 +36,7 @@ export const discussion = [
         userName : "Ratann Taataaa ",
         type: "sector 3",
         time : "2 mins ago",
-        likes : "",
+        likes : "8k Likes",
         views : "100k",
         comments : "20k comments",
         post : "Hello this is Ratan, This is a Great Website for me , its user interface is very clear. "
@@ -47,7 +47,7 @@ export const discussion = [
         userName : "Mukes Ambani",
         type: "sector 1",
         time : "10 hrs ago",
-        likes : "",
+        likes : "3k Likes",
         views : "10k",
         comments : "5k comments",
         post : "Hello this is Mukesh, This is a Great Website for me , its user interface is very clear. "
