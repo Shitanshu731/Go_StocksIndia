@@ -36,9 +36,9 @@ export const discussion = [
         userName : "Ratann Taataaa ",
         type: "sector 3",
         time : "2 mins ago",
-        likes : "8k Likes",
+        likes : "1k Likes",
         views : "100k",
-        comments : "20k comments",
+        comments : "2k comments",
         post : "Hello this is Ratan, This is a Great Website for me , its user interface is very clear. "
 
 } ,
