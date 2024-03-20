@@ -8,7 +8,7 @@ const DiscussionForm = ({isSidebar,sidebar}) => {
         <div className={`sidebarArrow  fixed top-[44%]  left-0 bg-[#1e375f] w-4 h-20 cursor-pointer ${isSidebar && 'ml-[25.7%] max-md:ml-[60%] max-sm:ml-[50%] max-md:top-[44%] duration-200'} `} onClick={sidebar}>
         <Image className={`rounded-md -rotate-90 duration-150 mt-6  ${isSidebar && 'rotate-90 duration-150'}`} src={"/downarrow.png"} alt="downarrow" height={40} width={40}/>
         </div>
-        <h2 className='text-red-300 text-4xl font-bold bg-slate-300 max-md:hidden w-[50%] max-md:w-[80%] p-2 items-center text-center ml-4 mt-4 shadow-lg'>Discussion Forum</h2>
+        <h2 className='text-red-400 text-4xl font-bold bg-slate-300 max-md:hidden w-[50%] max-md:w-[80%] p-2 items-center text-center ml-4 mt-4 shadow-lg'>DISCUSSION FORUM</h2>
         {discussion.map((items) => (
         <div key={items.name} className='mt-3 discussionContainer flex flex-col gap-16'>
         <div className={`discussionBlock bg-white py-4 rounded-md shadow-lg w-[100%] overflow-hidden `}>
