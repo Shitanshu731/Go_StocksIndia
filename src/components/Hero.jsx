@@ -43,7 +43,7 @@ const Hero = () => {
         <Image className={`rounded-md -rotate-90 duration-150 mt-6  ${isSidebar && 'rotate-90 duration-150'}`} src={"/downarrow.png"} alt="downarrow" height={40} width={40}/>
         </div>
         <h2 className='text-red-300 text-4xl font-bold bg-slate-300 max-md:hidden w-[50%] max-md:w-[80%] p-2 items-center text-center ml-4 mt-4 shadow-lg'>Discussion Forum</h2>
-        <div className='mt-3 discussionContainer flex flex-col gap-4'>
+        <div className='mt-3 discussionContainer flex flex-col gap-16'>
         <div className={`discussionBlock bg-white py-4 rounded-md shadow-lg w-[100%] overflow-hidden `}>
           <div className='userDetails flex items-center gap-6'>
           <Image className={`rounded-md duration-150 ml-2 mt-2`} src={"/user-acc.jpg"} alt="downarrow" height={40} width={40}/>
